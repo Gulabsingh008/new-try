@@ -1,4 +1,5 @@
 import os
+from os import environ
 
 API_ID = int(os.getenv("API_ID", 26494161))  # Replace with actual API_ID
 API_HASH = os.getenv("API_HASH", "55da841f877d16a3a806169f3c5153d3")
