@@ -1,7 +1,8 @@
 from pyrogram import Client
 from config import API_ID, API_HASH, BOT_TOKEN
 from pyrogram.errors import RPCError
-from pyrogram.idle import idle
+from pyrogram import idle
+
 
 app = Client(
     "my_bot",
