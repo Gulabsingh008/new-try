@@ -10,8 +10,8 @@ app = Client(
 )
 
 # Import Commands from handlers folder
-import handlers.start
-import handlers.today
+import handlers.commands
+
 
 app.run()
 
