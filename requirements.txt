@@ -1,0 +1,6 @@
+# requirements.txt - Required Python Modules
+pyrogram
+pymongo
+tgcrypto
+dotenv
+
