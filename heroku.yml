@@ -1,0 +1,6 @@
+# heroku.yml - Heroku Deployment Configuration
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: python app.py
