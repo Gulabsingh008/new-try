@@ -1,12 +1,12 @@
 # config.py - Store all bot configurations
 import os
 
-API_ID = int(os.getenv("API_ID", "12345"))  # Replace with your API ID
-API_HASH = os.getenv("API_HASH", "your_api_hash")  # Replace with your API Hash
-BOT_TOKEN = os.getenv("BOT_TOKEN", "your_bot_token")  # Replace with your Bot Token
+API_ID = int(os.getenv("API_ID", "26494161"))  # Replace with your API ID
+API_HASH = os.getenv("API_HASH", "55da841f877d16a3a806169f3c5153d3")  # Replace with your API Hash
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")  # Replace with your Bot Token
 
-DATABASE_URI = os.getenv("DATABASE_URI", "mongodb+srv://your_mongo_uri")
-DATABASE_NAME = "techvjclonefilterbot"
-COLLECTION_NAME = "vjcollection"
+DATABASE_URI = os.getenv("DATABASE_URI", "")
+DATABASE_NAME = "af_data"
+COLLECTION_NAME = "afcollection"
 
-LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1001234567890"))  # Channel where logs will be sent
+LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", ""))  # Channel where logs will be sent
