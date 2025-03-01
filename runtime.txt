@@ -1,2 +1,0 @@
-# runtime.txt - Define Python Version for Heroku
-python-3.9.18
