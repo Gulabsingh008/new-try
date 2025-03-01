@@ -1,6 +1,7 @@
-# bot.py - Main Bot File
 from pyrogram import Client
 from config import API_ID, API_HASH, BOT_TOKEN
+from pyrogram.errors import RPCError
+from pyrogram.idle import idle
 
 app = Client(
     "my_bot",
@@ -9,9 +10,15 @@ app = Client(
     bot_token=BOT_TOKEN
 )
 
-# Import Commands from handlers folder
-import handlers.commands
+import handlers.commands  # All commands in one file
 
-
-app.run()
-
+if __name__ == "__main__":
+    try:
+        app.start()
+        print("Bot is running...")
+        idle()  # Keeps the bot running
+    except RPCError as e:
+        print(f"Error: {e}")
+    finally:
+        app.stop()
+        print("Bot stopped.")
